@@ -131,7 +131,7 @@ exit extra
 
 ## Проверка
 
-При подготовке выполнено 20 автоматических тестов; все прошли.
+При подготовке выполнено 21 автоматический тест; все прошли.
 Тесты проверяют результаты команд, неверные аргументы и обработку ошибок.
 
 ## Функции исходного кода
@@ -142,7 +142,9 @@ exit extra
 - `Commands.cd`: Change directory; no arguments return to the VFS root.
 - `Commands.tac`: Concatenate files with their line order reversed per file.
 - `Commands.date`: Show local OS date/time or one strftime format with + prefix.
-- `Commands.find`: Recursively list paths, optionally filtering by -name glob.
+- `Commands.find`: рекурсивный поиск с необязательным фильтром имени.
+- `Commands._find_settings`: проверка аргументов, пути и шаблона поиска.
+- `Commands._find_paths`: выбор исходного узла и его потомков.
 - `commands.install`: Register the five fully implemented stage-four commands.
 - `config.arguments`: Parse VFS/script locations and an optional noninteractive mode.
 - `config.run_script`: Echo script commands, skip Python comments, report each error.
